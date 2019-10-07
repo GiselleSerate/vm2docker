@@ -2,8 +2,7 @@ FROM ubuntu:14.04
 RUN apt-get update
 RUN apt-get install -y python python-pip python-dev swig
 RUN apt-get install -y rsync curl duplicity
-RUN curl -s https://get.docker.io/builds/Linux/x86_64/docker-latest -o /usr/local/bin/docker
-RUN chmod +x /usr/local/bin/docker
+RUN apt-get install -y docker.io
 #RUN apt-get install -y gdb # (for debugging)
 
 # add sourcecode
